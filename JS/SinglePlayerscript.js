@@ -37,11 +37,13 @@ boxes.forEach((box) =>{
         box.innerText = "O";
         box.disabled = true;
 
-        RandomBox();
+        if(count < 9 && !checkwinner()){
+            RandomBox();
+        }
 
         //Checks the draw condition
-        let iswinner = checkwinner();
-        if(count === 9 && !iswinner){
+        checkwinner();
+        if(count === 9 && !checkwinner()){
             drawSound.play();
             draw.classList.remove("hide");
         }
@@ -144,4 +146,3 @@ const backbtn = () =>{
 newbtn.addEventListener("click", resetGame);
 resetbtn.addEventListener("click", resetGame);
 backBtn.addEventListener("click", backbtn);
-

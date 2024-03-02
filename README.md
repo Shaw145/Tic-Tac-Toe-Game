@@ -1,5 +1,5 @@
 ## Tic Tac Toe Game
-A Tic Tac Toe Game (Full Responsive) that can be played by two players build using HTML,CSS & Javascript.
+A Tic Tac Toe Game (Full Responsive) that can be played by One Player or two players build using HTML,CSS & Javascript.
 
 ## About
 This is my very first mini project in javascript built from scratch using HTML, CSS, and JavaScript!. From understanding the basics of JavaScript syntax to applying it in a practical project, every step has been a valuable learning experience.
