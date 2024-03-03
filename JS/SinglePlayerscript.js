@@ -36,13 +36,12 @@ boxes.forEach((box) =>{
         
         box.innerText = "O";
         box.disabled = true;
-
+        checkwinner();
         if(count < 9 && !checkwinner()){
             RandomBox();
         }
 
         //Checks the draw condition
-        checkwinner();
         if(count === 9 && !checkwinner()){
             drawSound.play();
             draw.classList.remove("hide");
@@ -63,7 +62,7 @@ const RandomBox = () =>{
         count++;
         touch.play();
         boxes[randomNumber].disabled = true;
-        
+        checkwinner();
     });
 };
 
